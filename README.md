@@ -1,79 +1,73 @@
-# AEC_Hackathon
-# Heidelberg Materials Group - NextGen EcoNext
-## Fleet Optimization & Route Pooling System
+# React + TypeScript + Vite
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Status](https://img.shields.io/badge/status-Production%20Ready-green)
-![License](https://img.shields.io/badge/license-Proprietary-red)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 📋 Project Overview
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-**NextGen EcoNext** is an advanced fleet management optimization system developed for Heidelberg Materials Group's concrete delivery operations in Hungary. The system uses intelligent route pooling and bin packing algorithms to significantly reduce transportation costs while maintaining service quality.
+## React Compiler
 
-### Key Achievement
-- **€282,189.73 savings** (30% cost reduction) across 8 months
-- **2,895 optimized routes** requiring only 12m³ trucks
-- **67.9% average truck utilization** across all routes
-- **€60,273.72 average monthly savings**
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
----
+## Expanding the ESLint configuration
 
-## 🎯 Problem Statement
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-Heidelberg Materials Group faced inefficient concrete delivery routing with:
-- Individual orders priced separately (€124/m³ for <3m³, €104.23/m³ for 3-7m³, €28.57/m³ for >7m³)
-- No consolidation of nearby orders
-- Underutilized truck capacity
-- High per-order delivery costs
-- Manual route planning
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
----
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-## ✨ Solution Features
-
-### 1. **Intelligent Route Pooling**
-- Combines multiple small orders into single truck deliveries
-- Example: 9m³ + 3m³ = 12m³ (1 truck) instead of 2 separate deliveries
-- Applies when orders are:
-  - Same concrete type
-  - Within 50km distance threshold
-  - Can fit within truck capacity (7m³ or 12m³)
-
-### 2. **Multi-Level Optimization Hierarchy**
-```
-Date/Month
-  ↓
-Concrete Type
-  ↓
-Distance Zone (<50km)
-  ↓
-Truck Size Selection
-  ↓
-Bin Packing Algorithm
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
 
-### 3. **Advanced Bin Packing (First Fit Decreasing)**
-- Sorts orders by size (largest first)
-- Greedily fills 12m³ trucks first (lowest cost per m³)
-- Falls back to 7m³ trucks if needed
-- Minimizes total trucks required
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-### 4. **Daily & Monthly Analytics**
-- Real-time cost comparison (before vs after pooling)
-- Savings breakdown by date, concrete type, distance zone
-- Truck fleet composition analysis
-- Utilization metrics
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-### 5. **Dynamic Pricing Model**
-| Scenario | Size | Price/m³ |
-|----------|------|----------|
-| **Before Pooling** | <3m³ | €124.00 |
-| **Before Pooling** | 3-7m³ | €104.23 |
-| **Before Pooling** | >7m³ | €28.57 |
-| **After Pooling** | 7m³ truck | €104.23 |
-| **After Pooling** | 12m³ truck | €28.57 |
-
----
-
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
