@@ -1,0 +1,262 @@
+[
+  {
+    "customer_id": 1,
+    "coordinates": {
+      "latitude": 49.75,
+      "longitude": 9.75
+    },
+    "order_volume": 5.0,
+    "strength": "low",
+    "Dmax": 50.0,
+    "consistency": "consistent",
+    "exposure": "low",
+    "date": "2025-11-22T00:00:00"
+  },
+  {
+    "customer_id": 2,
+    "coordinates": {
+      "latitude": 49.8,
+      "longitude": 9.8
+    },
+    "order_volume": 6.0,
+    "strength": "medium",
+    "Dmax": 51.0,
+    "consistency": "variable",
+    "exposure": "medium",
+    "date": "2025-11-23T00:00:00"
+  },
+  {
+    "customer_id": 3,
+    "coordinates": {
+      "latitude": 49.85,
+      "longitude": 9.85
+    },
+    "order_volume": 7.0,
+    "strength": "high",
+    "Dmax": 52.0,
+    "consistency": "consistent",
+    "exposure": "high",
+    "date": "2025-11-22T00:00:00"
+  },
+  {
+    "customer_id": 4,
+    "coordinates": {
+      "latitude": 49.9,
+      "longitude": 9.9
+    },
+    "order_volume": 8.0,
+    "strength": "low",
+    "Dmax": 53.0,
+    "consistency": "variable",
+    "exposure": "low",
+    "date": "2025-11-23T00:00:00"
+  },
+  {
+    "customer_id": 5,
+    "coordinates": {
+      "latitude": 49.95,
+      "longitude": 9.95
+    },
+    "order_volume": 9.0,
+    "strength": "medium",
+    "Dmax": 54.0,
+    "consistency": "consistent",
+    "exposure": "medium",
+    "date": "2025-11-22T00:00:00"
+  },
+  {
+    "customer_id": 6,
+    "coordinates": {
+      "latitude": 50.0,
+      "longitude": 10.0
+    },
+    "order_volume": 10.0,
+    "strength": "high",
+    "Dmax": 55.0,
+    "consistency": "variable",
+    "exposure": "high",
+    "date": "2025-11-23T00:00:00"
+  },
+  {
+    "customer_id": 7,
+    "coordinates": {
+      "latitude": 50.05,
+      "longitude": 10.05
+    },
+    "order_volume": 11.0,
+    "strength": "low",
+    "Dmax": 56.0,
+    "consistency": "consistent",
+    "exposure": "low",
+    "date": "2025-11-22T00:00:00"
+  },
+  {
+    "customer_id": 8,
+    "coordinates": {
+      "latitude": 50.1,
+      "longitude": 10.1
+    },
+    "order_volume": 12.0,
+    "strength": "medium",
+    "Dmax": 57.0,
+    "consistency": "variable",
+    "exposure": "medium",
+    "date": "2025-11-23T00:00:00"
+  },
+  {
+    "customer_id": 9,
+    "coordinates": {
+      "latitude": 50.15,
+      "longitude": 10.15
+    },
+    "order_volume": 13.0,
+    "strength": "high",
+    "Dmax": 58.0,
+    "consistency": "consistent",
+    "exposure": "high",
+    "date": "2025-11-22T00:00:00"
+  },
+  {
+    "customer_id": 10,
+    "coordinates": {
+      "latitude": 50.2,
+      "longitude": 10.2
+    },
+    "order_volume": 14.0,
+    "strength": "low",
+    "Dmax": 59.0,
+    "consistency": "variable",
+    "exposure": "low",
+    "date": "2025-11-23T00:00:00"
+  },
+  {
+    "customer_id": 11,
+    "coordinates": {
+      "latitude": 46.8309,
+      "longitude": 18.8348
+    },
+    "order_volume": 10.0,
+    "strength": "20/25",
+    "Dmax": 16.0,
+    "consistency": "F1",
+    "exposure": "X0b(H)",
+    "date": "2025-11-22T00:00:00"
+  },
+  {
+    "customer_id": 12,
+    "coordinates": {
+      "latitude": 46.8309,
+      "longitude": 18.8348
+    },
+    "order_volume": 10.0,
+    "strength": "20/25",
+    "Dmax": 16.0,
+    "consistency": "F1",
+    "exposure": "X0b(H)",
+    "date": "2025-11-22T00:00:00"
+  },
+  {
+    "customer_id": 13,
+    "coordinates": {
+      "latitude": 46.8309,
+      "longitude": 18.8348
+    },
+    "order_volume": 10.0,
+    "strength": "20/25",
+    "Dmax": 16.0,
+    "consistency": "F1",
+    "exposure": "X0b(H)",
+    "date": "2025-11-22T00:00:00"
+  },
+  {
+    "customer_id": 14,
+    "coordinates": {
+      "latitude": 46.8309,
+      "longitude": 18.8348
+    },
+    "order_volume": 10.0,
+    "strength": "20/25",
+    "Dmax": 16.0,
+    "consistency": "F1",
+    "exposure": "X0b(H)",
+    "date": "2025-11-22T00:00:00"
+  },
+  {
+    "customer_id": 15,
+    "coordinates": {
+      "latitude": 46.8309,
+      "longitude": 18.8348
+    },
+    "order_volume": 10.0,
+    "strength": "20/25",
+    "Dmax": 16.0,
+    "consistency": "F1",
+    "exposure": "X0b(H)",
+    "date": "2025-11-22T00:00:00"
+  },
+  {
+    "customer_id": 16,
+    "coordinates": {
+      "latitude": 46.8309,
+      "longitude": 18.8348
+    },
+    "order_volume": 20.0,
+    "strength": "C35/45",
+    "Dmax": 8.0,
+    "consistency": "F1",
+    "exposure": "X0b(H)",
+    "date": "2025-11-27T00:00:00"
+  },
+  {
+    "customer_id": 17,
+    "coordinates": {
+      "latitude": 46.8309,
+      "longitude": 18.8348
+    },
+    "order_volume": 12.0,
+    "strength": "C35/45",
+    "Dmax": 8.0,
+    "consistency": "F1",
+    "exposure": "X0b(H)",
+    "date": "2025-11-27T00:00:00"
+  },
+  {
+    "customer_id": 18,
+    "coordinates": {
+      "latitude": 46.8309,
+      "longitude": 18.8348
+    },
+    "order_volume": 20.0,
+    "strength": "C35/45",
+    "Dmax": 8.0,
+    "consistency": "F2",
+    "exposure": "X0b(H)",
+    "date": "2025-11-03T00:00:00"
+  },
+  {
+    "customer_id": 19,
+    "coordinates": {
+      "latitude": 46.8309,
+      "longitude": 18.8348
+    },
+    "order_volume": 20.0,
+    "strength": "C35/45",
+    "Dmax": 8.0,
+    "consistency": "F1",
+    "exposure": "X0b(H)",
+    "date": "2025-11-25T00:00:00"
+  },
+  {
+    "customer_id": 20,
+    "coordinates": {
+      "latitude": 46.8309,
+      "longitude": 18.8348
+    },
+    "order_volume": 20.0,
+    "strength": "C30/37",
+    "Dmax": 16.0,
+    "consistency": "F1",
+    "exposure": "X0b(H)",
+    "date": "2025-11-27T00:00:00"
+  }
+]
